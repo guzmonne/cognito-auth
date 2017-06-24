@@ -1,0 +1,9 @@
+{
+  "name": "cognito-auth",
+  "version": "1.0.0",
+  "description": "Authentication with AWS Cognito example code.",
+  "main": "javascript/index.js",
+  "repository": "https://github.com/guzmonne/cognito-auth",
+  "author": "Guzman Monne <guzmonne@hotmail.com>",
+  "license": "MIT"
+}
