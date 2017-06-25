@@ -1,0 +1,38 @@
+.Alert {
+  display: block;
+  background-color: var(--dark-grey);
+  border-radius: 0.4em;
+  color: white;
+  padding: 1em;
+  width: 20em;
+  margin: 1em auto;
+  position: relative;
+  text-align: center;
+}
+
+.Alert__close {
+  position: absolute;
+  top: 0.2em;
+  right: 0.5em;
+  cursor: pointer;
+}
+
+.Alert__close:before {
+  content: '×';
+} 
+
+.Alert__error {
+  background-color: var(--red);
+}
+
+.Alert__success {
+  background-color: var(--green);
+}
+
+.Alert__warning {
+  background-color: var(--orange);
+}
+
+.Alert__info {
+  background-color: var(--blue);
+}

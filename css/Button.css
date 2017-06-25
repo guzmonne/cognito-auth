@@ -1,0 +1,21 @@
+.Button {
+  margin: 2em auto;
+  display: block;
+  opacity: .99;
+  width: 10em;
+  background: var(--light-blue);
+  box-shadow: inset 0 0.1em 0.1em var(--dark-blue);
+  border: 0.1em solid #0a5378;
+  border-radius: 0.4em;
+  color: #eee;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background: var(--light-blue);
+  width: 10em;
+  border: 0.1em solid var(--dark-blue);
+  border-radius: 0.3em;
+  box-shadow: inset 0px 3px 16px rgba(0,0,0,.25),0px 1px 10px rgba(255,255,255,.5),inset 0px -1px 2px rgba(255,255,255,.35);
+  transition: all 0.40s ease-out;
+}

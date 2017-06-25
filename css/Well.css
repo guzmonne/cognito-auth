@@ -1,0 +1,16 @@
+.Well {
+  display: block;
+  text-align: center;
+  border-radius: 0.5em;
+  margin: 3em;
+  padding: 2em;
+  background-color: var(--dark-grey);
+}
+
+.Well__info {
+  background-color: var(--blue);
+}
+
+.Well__loading {
+  background-color: var(--purple);
+}

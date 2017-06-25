@@ -5,5 +5,12 @@
   "main": "javascript/index.js",
   "repository": "https://github.com/guzmonne/cognito-auth",
   "author": "Guzman Monne <guzmonne@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "serve": "live-server . --wait 500"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "live-server": "^1.2.0"
+  }
 }

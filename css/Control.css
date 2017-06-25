@@ -1,0 +1,74 @@
+.Control__label{
+  position: relative;
+  font-weight:bold;
+  color: var(--dark-grey);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.Control__input {
+  display: block;
+  font-size: 0.8em;
+  width: 18em;
+  margin: 1em auto;
+  padding: 1em 0.5em 1em 0.5em;
+  border-radius: 0.4em;
+  box-shadow: inset 0 1px 2px rgba(0,0,0, .55), 0px 1px 1px rgba(255,255,255,.5);
+  border: 0.1em solid var(--dark-grey);
+}
+
+.Control__input {
+  opacity: 0.5;
+}
+
+.Control__input:hover,
+.Control__input:focus {
+  opacity: .7;
+  border: 0.1em solid  var(--light-blue);
+  box-shadow: 0px 1px 0px rgba(255,255,255,.25),inset 0px 3px 6px rgba(0,0,0,.25);
+}
+
+.Control__input[type="text"]:focus,
+.Control__input[type="password"]:focus {
+  box-shadow: inset 0 1px 2px rgba(255,255,255, .35), 0px 1px 15px rgba(0,246,255,.5);
+  border: 0.1em solid var(--light-blue);
+  outline: none;
+}
+
+.Control__input[type="submit"] {
+  opacity: .99;
+  width: 10em;
+  background: var(--light-blue);
+  box-shadow: inset 0 0.1em 0.1em var(--very-light-grey), 0 0.1em 0.5em var(--light-grey);
+  border: 0,1em solid #0a5378;
+  border-radius: 0.4em;
+  color: #eee;
+  cursor: pointer;
+}
+
+.Control__input:disabled,
+.Control__input[type="submit"]:hover {
+  background: var(--light-blue);
+  width: 10em;
+  border: 0.1em solid var(--dark-blue);
+  border-radius: 0.3em;
+  box-shadow: inset 0px 3px 16px rgba(0,0,0,.25),0px 1px 10px rgba(255,255,255,.5),inset 0px -1px 2px rgba(255,255,255,.35);
+  transition: all 0.40s ease-out;
+}
+
+.Control__input:disabled {
+  opacity: 0.5;
+}
+
+.Control__link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0.1em 0.1em var(--almost-black);
+  text-align: center;
+}
+
+.Control__link:hover {
+  text-decoration: underline;
+}

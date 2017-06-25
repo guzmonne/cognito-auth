@@ -1,0 +1,40 @@
+:root {
+  --grey: #bdbdc7;
+  --light-grey: rgba(255, 255, 255, .5);
+  --very-light-grey: rgba(255,255,255, .35);
+  --dark-grey: #444;
+  --almost-black: rgba(0,0,0, .55);
+  --light-blue: #08c;
+  --light-green: rgba(0,246,255,.5);
+  --dark-blue: #0a5378;
+  --red: #FF595E;
+  --green: #8AC926;
+  --orange: #FFCA3A;
+  --blue: #1982C4;
+  --purple: #6A4C93;
+}
+
+body {
+  font-size: 16px;
+  background: var(--grey);
+  margin: 0 0;
+  padding: 1em;
+  font-family: 'Myriad Pro','Helvetica Neue', Helvetica;
+}
+
+.title {
+  position: relative;
+	font-family: 'Myriad Pro','Helvetica Neue', Helvetica;
+  font-weight:bold;
+  font-size: 2em;
+  text-shadow: 0 0.1em 0.1em var(--light-grey);
+  color: var(--dark-grey);
+  text-align: center;
+}
+
+.form {
+  background: none;
+  margin: 1.5em auto 0;
+  padding: 1em;
+  width: 20em;
+}

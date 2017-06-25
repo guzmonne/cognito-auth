@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AWS Cognito authentication example</title>
+  <link rel="stylesheet" media="all" href="/css/index.css">
+  <link rel="stylesheet" media="all" href="/css/Control.css">
+  <link rel="stylesheet" media="all" href="/css/Alert.css">
+  <link rel="stylesheet" media="all" href="/css/Button.css">
+  <link rel="stylesheet" media="all" href="/css/Well.css">
+</head>
+<body>
+  <!-- Templates -->
+  <script type="text/html" id="LoginForm">
+    <div class="LoginForm">
+      <div class="title">Login</div>
+      <form class="form">
+        <div class="Control">
+          <label class="Control__label" for="email">Email</label>
+          <input class="Control__input" name="email" type="text" placeholder="Email" />
+        </div>
+        <div class="Control">
+          <label class="Control__label" for="password">Password</label>
+          <input class="Control__input" name="password" type="password" placeholder="Password" />
+        </div>
+        <input class="Control__input" type="submit" value="Let's go" />
+        <a class="Control__link" href="#signup">
+          I want an account.
+        </a>
+      </form>
+    </div>
+  </script>
+  <script type="text/html" id="SignupForm">
+    <div class="SignupForm">
+      <div class="title">Sign Up</div>
+      <form class="form">
+        <div class="Control">
+          <label class="Control__label" for="email">Email</label>
+          <input class="Control__input" name="email" type="text" placeholder="Email" />
+        </div>
+        <div class="Control">
+          <label class="Control__label" for="password">Password</label>
+          <input class="Control__input" name="password" type="password" placeholder="Password" />
+        </div>
+        <div class="Control">
+          <label class="Control__label" for="repeatPassword">
+            Repeat Password
+          </label>
+          <input class="Control__input" name="repeatPassword" type="password" placeholder="Repeat Password" />
+        </div>
+        <input class="Control__input" type="submit" value="Sign me up!" />
+        <a class="Control__link" href="#login">
+          Send me back to the login page.
+        </a>
+      </form>
+    </div>
+  </script>
+  <script type="text/html" id="Alert">
+    <div class="Alert Alert__<%= type %>">
+      <span class="Alert__close"></span>
+      <%= message %>
+    </div>
+  </script>
+  <script type="text/html" id="ConfirmForm">
+    <div class="ConfirmForm">
+      <div class="title">Confirm email</div>
+      <form class="form">
+        <div class="Control">
+          <label class="Control__label" for="code">Authorization code</label>
+          <input class="Control__input" name="code" type="text" placeholder="Authorization code" />
+        </div>
+        <input class="Control__input" type="submit" value="Here you go" />
+        <a class="Control__link" href="#">
+          Please, resend the authorization code.
+        </a>
+        <hr />
+        <a class="Control__link" href="#signup">
+          Send me back to the login page.
+        </a>
+      </form>
+    </div>
+  </script>
+  <script type="text/html" id="Welcome">
+    <div class="Well Well__info">
+      <div class="title">Welcome <%= email %></div>
+      <button type="button" class="Button">Bye!</button>
+    </div>
+  </script>
+  <!-- Root component -->
+  <div id="root"></div>
+  <!-- Scripts -->
+  <script src="/javascript/lib/aws-cognito-sdk.min.js"></script>
+  <script src="/javascript/lib/amazon-cognito-identity.min.js"></script>
+  <script src="/javascript/config.js"></script>
+  <script src="/javascript/utils.js"></script>
+  <script src="/javascript/EventEmmiter.js"></script>
+  <script src="/javascript/Cognito.js"></script>
+  <script src="/javascript/LoginForm.js"></script>
+  <script src="/javascript/ConfirmForm.js"></script>
+  <script src="/javascript/SignupForm.js"></script>
+  <script src="/javascript/Welcome.js"></script>
+  <script src="/javascript/index.js"></script>
+</body>
+</html>
