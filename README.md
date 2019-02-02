@@ -1,6 +1,8 @@
 Cognito - Auth
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/guzmonne/cognito-auth.svg)](https://greenkeeper.io/)
+
 by *Guzmán Monné*.
 
 This repo contains all the code for the article "[Custom authentication using AWS Cognito](https://medium.com/@gmonne/custom-authentication-using-aws-cognito-e0b489badc3f)", hosted on [Medium](https://www.medium.com).
